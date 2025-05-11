@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tokenomics - LongSmart Strategy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <img src="logo.png" class="logo-img" />
+    <h1>Tokenomics Overview</h1>
+  </header>
+  <main class="dashboard-grid">
+    <section>
+      <h2>Token Distribution</h2>
+      <canvas id="tokenChart" width="400" height="300"></canvas>
+    </section>
+    <section>
+      <ul>
+        <li>Founders & Team: 20%</li>
+        <li>Public Sale: 35%</li>
+        <li>Staking Rewards: 25%</li>
+        <li>Marketing: 10%</li>
+        <li>Reserve: 10%</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const ctx = document.getElementById('tokenChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Founders', 'Public Sale', 'Staking Rewards', 'Marketing', 'Reserve'],
+        datasets: [{
+          label: 'Tokenomics',
+          data: [20, 35, 25, 10, 10],
+          backgroundColor: ['#ff4d4f', '#40a9ff', '#73d13d', '#faad14', '#9254de']
+        }]
+      }
+    });
+  </script>
+</body>
+</html>

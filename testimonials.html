@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials - LongSmart Strategy</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="testimonials.js" defer></script>
+  <meta charset="UTF-8" />
+  <title>Testimonials - LongSmart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="testimonials.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Testimonials</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="testimonials.html">Testimonials</a>
-        </nav>
-    </header>
-    <main>
-        <section class="testimonial-form">
-            <h2>Submit Your Testimonial</h2>
-            <form id="testimonialForm">
-                <input type="text" id="username" placeholder="Your Name" required>
-                <textarea id="message" placeholder="Your experience..." required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-        <section class="testimonial-list">
-            <h2>What Our Users Say</h2>
-            <div id="testimonialsContainer"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 LongSmart Strategy. All rights reserved.</p>
-    </footer>
+  <header class="main-header">
+    <img src="logo.png" class="logo-img" />
+    <h1>User Testimonials</h1>
+  </header>
+  <main class="dashboard-grid">
+    <section>
+      <form id="testimonialForm">
+        <input type="text" id="user" placeholder="Your name" required />
+        <textarea id="message" placeholder="Your experience..." required></textarea>
+        <button type="submit">Submit Testimonial</button>
+      </form>
+    </section>
+    <section>
+      <div id="testimonialList"></div>
+    </section>
+  </main>
 </body>
 </html>

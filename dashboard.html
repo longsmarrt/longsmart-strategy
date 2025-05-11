@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - LongSmart Strategy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <header class="main-header">
+    <img src="logo.png" class="logo-img" alt="LongSmart Strategy" />
+    <h1>LongSmart Strategy Dashboard</h1>
+  </header>
+  <main class="dashboard-grid">
+    <section class="balance-panel">
+      <h2>Total Balance</h2>
+      <p id="balance">$0.00</p>
+      <h3>Today's ROI</h3>
+      <p id="roi">$0.00</p>
+    </section>
+    <section class="staking-panel">
+      <h2>Stake Tokens</h2>
+      <input type="number" id="stakeAmount" placeholder="Enter amount" />
+      <button onclick="estimateReward()">Estimate Rewards</button>
+      <p id="rewardEstimate">Estimated Reward: $0.00</p>
+    </section>
+    <section class="portfolio-chart">
+      <h2>Portfolio Allocation</h2>
+      <canvas id="portfolioChart" width="300" height="300"></canvas>
+    </section>
+    <section class="referral-panel">
+      <h2>Your Referral ID</h2>
+      <p id="referralCode">LS-XXXXXX</p>
+      <button onclick="copyReferral()">Copy ID</button>
+    </section>
+    <section class="transactions">
+      <h2>Recent Transactions</h2>
+      <ul id="transactionsList"></ul>
+    </section>
+  </main>
+</body>
+</html>

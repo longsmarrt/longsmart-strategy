@@ -1,60 +1,53 @@
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #0d1117;
-    color: #c9d1d9;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9fb;
+  color: #333;
 }
-header {
-    background-color: #161b22;
-    padding: 1rem;
-    text-align: center;
+.main-header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
 }
-nav a {
-    margin: 0 1rem;
-    color: #58a6ff;
-    text-decoration: none;
+.logo-img {
+  height: 40px;
+  margin-right: 1rem;
 }
-.hero {
-    padding: 2rem;
-    text-align: center;
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
 }
-.features, .dashboard {
-    padding: 2rem;
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #161b22;
-    color: #8b949e;
+section {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-
-.testimonial-form, .testimonial-list {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+input[type="number"] {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.testimonial-form form {
-    display: flex;
-    flex-direction: column;
+button {
+  background-color: #0073e6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.testimonial-form input, .testimonial-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    font-size: 1rem;
-}
-.testimonial-form button {
-    padding: 0.75rem;
-    background-color: #238636;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.testimonial {
-    border-bottom: 1px solid #30363d;
-    padding: 1rem 0;
-}
-.testimonial h4 {
-    margin: 0;
-    color: #58a6ff;
+button:hover {
+  background-color: #005bb5;
 }
