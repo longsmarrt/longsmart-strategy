@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+header {
+    background-color: #161b22;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    margin: 0 1rem;
+    color: #58a6ff;
+    text-decoration: none;
+}
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+.features, .dashboard {
+    padding: 2rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #161b22;
+    color: #8b949e;
+}
+
+.testimonial-form, .testimonial-list {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+.testimonial-form form {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-form input, .testimonial-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+.testimonial-form button {
+    padding: 0.75rem;
+    background-color: #238636;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.testimonial {
+    border-bottom: 1px solid #30363d;
+    padding: 1rem 0;
+}
+.testimonial h4 {
+    margin: 0;
+    color: #58a6ff;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LongSmart Strategy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>LongSmart Strategy</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Plans</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to LongSmart Strategy</h2>
+            <p>Elite crypto investment strategies for cosmic returns.</p>
+            <button onclick="alert('Sign up coming soon!')">Get Started</button>
+        </section>
+        <section class="features">
+            <h3>Our Features</h3>
+            <ul>
+                <li>Real-time ROI Tracking</li>
+                <li>Exclusive Asset Management</li>
+                <li>Referral Bonuses</li>
+                <li>Staking Options</li>
+            </ul>
+        <p>Your Referral ID: <strong id="referral-id">Generating...</strong></p></section>
+        <section class="dashboard">
+            <h3>Investor Dashboard</h3>
+            <p>Total Balance: $2,874,930.45</p>
+            <p>Today's ROI: +<span id="roi-value">$0.00</span></p>
+        <canvas id="portfolioChart" width="400" height="200"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('portfolioChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['BTC', 'ETH', 'ALGO', 'SecretCoin', 'CosmicX'],
+            datasets: [{
+                label: 'Portfolio Distribution',
+                data: [45, 25, 15, 10, 5],
+                backgroundColor: ['#f7931a', '#627eea', '#00ffcc', '#999999', '#ff33cc'],
+                borderWidth: 1
+            }]
+        }
+    });
+</script></section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LongSmart Strategy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
